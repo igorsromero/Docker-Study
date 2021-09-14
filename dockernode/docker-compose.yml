@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  app:
+    build: . # Localização do Dockerfile
+    command: yarn start # Comando que quero executar quando a aplicação subir
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/app
